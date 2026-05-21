@@ -69,11 +69,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1779112705,
-        "narHash": "sha256-kXQ7a+6RsC7i83Vb32ek88vRmFhDi6n2IrukbCBi2kk=",
+        "lastModified": 1779364061,
+        "narHash": "sha256-NiaMbnWYxnNXhDi4cvsQS18dRlkKaaVW1jhbJoyhPjs=",
         "owner": "eritho23",
         "repo": "classy",
-        "rev": "1c089281ba70f158aff64fa85d8c9f5393d42ff2",
+        "rev": "15c9d2a0a11aa9fa45aa3bb1dd475032b4111a5a",
         "type": "github"
       },
       "original": {
