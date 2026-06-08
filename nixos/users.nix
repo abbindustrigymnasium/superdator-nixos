@@ -60,7 +60,7 @@
   users.users."beni" = { # Kept for deployment dependency
     isNormalUser = true;
     uid = 1009;
-    hashedPasswordFile = config.sops.secrets."beni_hashed_password".path;
+    hashedPasswordFile = config.sops.secrets."null_passwd".path;
     extraGroups = ["ssh-access"];
     # packages = with pkgs; [];
   };

@@ -1,34 +1,17 @@
 # Secrets
 
 keys:
-  - &gustav age19c8qem9840j93me4qauxkxxkuayejgvck2l7yu8z8r3ffd0wr9jq2hy70c 
-  - &erre age1za4x2kz9kuus40c5tfznckcy9vfrqzt6m0kclpr5q52lcx6fxywq2t9str
+  - &gustav age19c8qem9840j93me4qauxkxxkuayejgvck2l7yu8z8r3ffd0wr9jq2hy70c
   - &superdator age1l9rlv0kltyh42f3t0hlmpulxkuez00dumw24w8ygw09497wea35q4ecgw8
-  - &obsidian age1n2vym8aq3fdxrmpejz40pulnmwjhmw9u75xc8hrkvc98dq4h83jqkmlxug
-  - &dunning age17jcxlfvqkva5ynsddfsnpk8wy99xjzmqwzc234ent49vvrgue9gsxncpwj
-  - &kruger age1gqpyefghp8qlp9tw8s4q7yfglpqcr40tjm94d8t283jx6u0xrgksqksa9n
-  - &splinter age1tjf7dpjkcu9mpttpjgxcq6lt4ta6kvztdu09470fgswfzh03gddsqy7uqu 
-  - &leonardo age1c6u4el5ajkql9gdqs097dqszffkektuxrvsha6p0dt07vefwe32sn6dkx2
-  - &donatello age1azjxve9js9uhg55kc7c8edevk3nx8gqhqfav9nltrnefkz4l85hqd5cxnd
   - &murphy age1d2pp6nj96az2rzdddhghfsvvnl40fdrtmmfw2em5hfpuj2ja5sjqjhvrn2
 creation_rules:
   - path_regex: secrets/secrets.yaml$
     key_groups:
       - age:
-        - *gustav
-        - *erre
-        - *superdator
-        - *obsidian
+          - *gustav
+          - *superdator
   - path_regex: secrets/ros2.yaml$
     key_groups:
       - age:
-        - *gustav
-        - *erre
-        - *obsidian
-        - *dunning
-        - *kruger
-        - *splinter
-        - *leonardo
-        - *donatello
-        - *murphy
-
+          - *gustav
+          - *murphy
