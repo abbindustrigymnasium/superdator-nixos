@@ -57,13 +57,13 @@
   #   # packages = with pkgs; [];
   # };
 
-  # users.users."beni" = {
-  #   isNormalUser = true;
-  #   uid = 1009;
-  #   hashedPasswordFile = config.sops.secrets."beni_hashed_password".path;
-  #   extraGroups = ["ssh-access"];
-  #   # packages = with pkgs; [];
-  # };
+  users.users."beni" = { # Kept for deployment dependency
+    isNormalUser = true;
+    uid = 1009;
+    hashedPasswordFile = config.sops.secrets."beni_hashed_password".path;
+    extraGroups = ["ssh-access"];
+    # packages = with pkgs; [];
+  };
 
   # users.users."hannes" = {
   #   isNormalUser = true;
